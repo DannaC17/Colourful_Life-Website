@@ -1,0 +1,456 @@
+/* General */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+main {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color:white;
+}
+
+h1 {
+    margin: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 0.3em;
+    border-radius: 5px; 
+}
+
+h2, h3 {
+    margin: 0.1em 0 0.1em 0;
+}
+
+header {
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation (Danna Castaneda)*/
+nav {
+    display: flex;
+    background-color: #CCCCCC;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    justify-content: space-around;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5em;
+    width: 70%;
+}
+
+nav li {
+    margin: auto;
+    padding: 0.5em 1em 0.5em 1em;
+    font-size: medium;
+    flex-grow: 1;
+}
+
+#nav-bar0 {    
+    background-color: #6cb4bb;
+}
+
+#nav-bar1 {    
+    background-color: #9cdbab;
+}
+
+#nav-bar2 {    
+    background-color: #fbb444;
+}
+
+#nav-bar3 {    
+    background-color: #f28a56;
+}
+
+#nav-bar4 {    
+    background-color: #ec6c63;
+}
+
+#nav-bar5 {    
+    background-color: #da8f8d;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color:black;
+}
+
+a:visited {
+    color:black;
+}
+
+nav a:hover {
+    font-weight: bold;
+    color: white;
+}
+
+#nav-elements a:hover {
+    text-shadow: 0px 1px 0.5px #666;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Webpage 3: History page (Danna Castaneda) */
+#history-title {
+    text-align: center;
+    color: #f28a56;
+}
+
+table {
+    border: 1px solid #12164d;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+    padding: 0;
+    width: 80%;
+    table-layout: fixed;
+    margin-left: auto;
+    margin-right: auto;
+}
+    
+table tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;
+}
+
+th {
+    background-color: #f28a56;
+    color: white;
+    text-transform: uppercase;
+}
+
+tr:hover {
+    background-color: #f5f5dc;
+}
+  
+table th, table td {
+    padding: .625em;
+    text-align: center;
+}
+
+table td {
+    padding: .625em;
+    text-align: center;
+}
+
+table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+}
+
+.milestone-table {
+    text-align: justify;   
+}
+
+#banner-history {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#history-icon {
+    width: 40%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#history-icon img {
+    margin-top: 5px;
+}
+
+#history-icon p {
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+#quotes {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#quotes p {
+    font-style: italic;
+    text-align: justify;
+}
+
+/* Footer (Danna Castaneda)*/
+footer {
+    width: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #CCCCCC;
+}
+
+footer h3 {
+    font-size: large;
+}
+
+footer p {
+    font-size: medium;
+}
+
+.contactus {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-logo {
+    width: 25%;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer-logo p {
+    margin: 0;
+}
+
+#slogan {
+    font-style: italic;
+    margin: 5px;
+}
+
+.footer-about {
+    width: 35%;
+    text-align: justify;
+    padding: 10px;
+}
+
+#insideDiv {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-quick {
+    width: 15%;
+    text-align: justify;
+    padding: 10px;
+}
+
+.footer-quick p {
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+
+.footer-contact {
+    width: 25%;
+    text-align: justify;
+    padding: 10px;
+}
+
+.footer-contact p { 
+    margin-top: 2px;
+    margin-bottom: 0px;
+}
+
+#social-media {
+    padding: 0;
+    margin: 8px;
+    margin-top: 5px;
+}
+
+#social-media li {
+    display: inline-block;
+}
+
+#social-media a {
+    color: white;
+}
+
+.fa {
+    padding: 8px;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    color: white;
+}
+
+.fa-skype {
+  background: #00aff0;
+}
+
+.fa-youtube {
+    background: #bb0000;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+}
+
+.fa-instagram {
+    background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+.fa-vimeo {
+    background: #45bbff;
+}
+
+@media screen and (max-width: 768px) {
+    /* Navigation (Danna Castaneda)*/
+    nav {
+        position: relative;
+        text-align: center;      
+    }
+
+    nav ul {
+        flex-direction:column;
+        background-color: #CCCCCC;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        transform: translateX(-150%);
+        transition: 0.5s;
+        padding: 10px;
+    }
+   
+    nav li {
+        width: 70%;
+    }    
+
+    nav ul li:hover > ul{
+        opacity: 0;
+    }
+
+    nav #toggle::after{
+        content: "menu";
+        padding: 10px;
+        transform: rotate(0deg);
+    }
+
+    .show{
+        transform: translateX(0%);
+    }
+    
+    .show + #toggle::after {
+        content: "close";
+    }
+    
+    #toggle {
+        transition: 0.5s;
+        transform: rotate(0deg);
+        margin-top: 30px;
+    }
+
+    .show + #toggle {
+        transform: rotate(360deg);
+    }
+    
+    /* Webpage 3: History page (Danna Castaneda) */
+    table {
+        border: 0;
+    }
+        
+    table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+    
+    table tr {
+        border-top: 3px solid #ffcc99;
+        display: block;
+        margin-bottom: .625em;
+    }
+    
+    td:hover{
+        background-color: #f5f5dc;
+    }
+
+    table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: .8em;
+        text-align: right;
+        background-color: #f8f8f8;
+    }
+    
+    table td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
+    table td:last-child {
+        border-bottom: 0;
+    }
+
+    /* Footer (Danna Castaneda)*/
+    .contactus {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-logo {
+        width: 100%;
+        text-align: center;
+    }   
+    
+    .footer-about {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .footer-about h3{
+        text-align: center;
+    }
+        
+    #insideDiv {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+        
+    .footer-quick {
+        display: none;
+    }
+
+    .footer-contact {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-contact p{
+        text-align: justify;
+        padding-left: 50px ;
+    }
+}
