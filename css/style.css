@@ -1,47 +1,32 @@
-/* General */
 * {
-    box-sizing: border-box;
-}
-
-html, body {
-    height: 100%;
-    background-color: #f4f4f4;
-    margin: 0;
-}
-
-main {
-    margin-left: 10%;
-    margin-right: 10%;
-    background-color:white;
-}
-
-h1 {
-    margin: 0;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding: 0.3em;
-    border-radius: 5px; 
-}
-
-h2, h3 {
-    margin: 0.1em 0 0.1em 0;
-}
-
-header {
-    text-align: center;
-    justify-content: center;
     margin: 0;
     padding: 0;
+    font-family: 'Alegreya Sans', sans-serif;
 }
 
-/* Navigation (Danna Castaneda)*/
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
 nav {
     display: flex;
+    text-align: center;
     background-color: #CCCCCC;
+    margin: 0;
     margin-left: 10%;
     margin-right: 10%;
-    text-align: center;
+    padding: 0;
     justify-content: space-around;
+}
+
+nav img {
+    margin: 0.5em;
+}
+
+nav p span {
+    margin-top: 5px;
 }
 
 nav ul {
@@ -49,162 +34,289 @@ nav ul {
     display: flex;
     flex-direction: row;
     font-size: 1.5em;
-    width: 70%;
 }
 
 nav li {
     margin: auto;
     padding: 0.5em 1em 0.5em 1em;
     font-size: medium;
-    flex-grow: 1;
 }
 
-#nav-bar0 {    
+#nav-bar0 {
     background-color: #6cb4bb;
+
 }
 
-#nav-bar1 {    
+#nav-bar1 {
     background-color: #9cdbab;
+
 }
 
-#nav-bar2 {    
+#nav-bar2 {
     background-color: #fbb444;
+
 }
 
-#nav-bar3 {    
+#nav-bar3 {
     background-color: #f28a56;
+
 }
 
-#nav-bar4 {    
+#nav-bar4 {
     background-color: #ec6c63;
+
 }
 
-#nav-bar5 {    
+#nav-bar5 {
     background-color: #da8f8d;
+
 }
 
 a {
     text-decoration: none;
+    color: white;
+}
+
+nav a {
+    color: white;
 }
 
 a:link {
-    color:black;
+    color: black;
 }
 
 a:visited {
-    color:black;
+    color: black;
 }
 
 nav a:hover {
     font-weight: bold;
     color: white;
+    box-shadow: 0.5em 1em 0.5em #666;
 }
 
-#nav-elements a:hover {
-    text-shadow: 0px 1px 0.5px #666;
-}
 
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+/*
+nav ul li a:hover { 
+    background: #12348d;
+    border: 1px solid #fff;
+    padding: 5px 10px;
 }
+*/
 
-/* Webpage 3: History page (Danna Castaneda) */
-#history-title {
-    text-align: center;
-    color: #f28a56;
-}
-
-table {
-    border: 1px solid #12164d;
-    border-collapse: collapse;
-    margin-bottom: 10px;
-    padding: 0;
-    width: 80%;
-    table-layout: fixed;
-    margin-left: auto;
-    margin-right: auto;
-}
-    
-table tr {
-    background-color: #f8f8f8;
-    border: 1px solid #ddd;
-    padding: .35em;
-}
-
-th {
-    background-color: #f28a56;
+.fa-facebook {
+    background: #3B5998;
     color: white;
-    text-transform: uppercase;
 }
 
-tr:hover {
-    background-color: #f5f5dc;
-}
-  
-table th, table td {
-    padding: .625em;
+.fa {
+    padding: 5px;
+    font-size: 10px;
+    width: 20px;
     text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
 }
 
-table td {
-    padding: .625em;
-    text-align: center;
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
 }
 
-table th {
-    font-size: .85em;
-    letter-spacing: .1em;
+.fa-instagram {
+    background: #125688;
+    color: white;
 }
 
-.milestone-table {
-    text-align: justify;   
-}
-
-#banner-history {
+.container {
     width: 80%;
     display: flex;
-    flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: space-between;
+    margin: auto;
+    text-align: center;
+    margin-top: 60px;
 }
 
-#history-icon {
+.contact-column-image {
+    position: relative;
+}
+
+.contact-column-details {
     width: 40%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-#history-icon img {
-    margin-top: 5px;
-}
-
-#history-icon p {
-    margin-top: 5px;
-    margin-bottom: 0px;
-}
-
-#quotes {
-    width: 80%;
+.contact-column-details-who {
     display: flex;
-    flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
+    width: 40%;
+    flex-direction: column;
 }
 
-#quotes p {
-    font-style: italic;
+.contact-column-details-form {
+    width: 40%;
+}
+
+.contact-column-details-form h3 {
+    font-size: 25px;
+    color: #da8f8d;
+    margin-left: 20%;
+}
+
+.contact-column-details-address {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.contact-column-details p {
+    text-align: justify;
+    margin-top: 20px;
+    color: #4c4c4c;
+}
+
+.contact-column-details h3 {
+    font-size: 25px;
+    text-align: center;
+    color: #da8f8d;
+}
+
+.contact-column-details-who p {
+    text-align: justify;
+    margin-top: 25px;
+    color: #4c4c4c;
+}
+
+.contact-column-details-who h3 {
+    font-size: 25px;
+    text-align: center;
+    color: #fbb444;
+}
+
+.contact-image {
+    border-top: 5px solid #6cb4bb;
+    border-right: 5px solid #fbb444;
+    border-bottom: 5px solid #f28a56;
+    border-left: 5px solid #ec6c63;
+}
+
+.contact-image-address {
+    border-top: 5px solid #6cb4bb;
+    border-right: 5px solid #fbb444;
+    border-bottom: 5px solid #f28a56;
+    border-left: 5px solid #ec6c63;
+}
+
+.donate-button {
+    color: white;
+    border-radius: 3px;
+    padding: 10px 18px;
+    background-color: #da8f8d;
+    text-decoration: none;
+    width: 20%;
+    position: absolute;
+    top: 80%;
+    left: 35%;
+}
+
+.donate-button-who {
+    color: white;
+    border-radius: 3px;
+    padding: 10px 18px;
+    background-color: #fbb444;
+    text-decoration: none;
+    width: 20%;
+    position: absolute;
+    top: 80%;
+    left: 36%;
+}
+
+.container-form {
+    border-radius: 3px;
+    padding: 25px 0px;
+    color: #4c4c4c;
+    text-align: left;
+}
+
+.container-form-address {
+    border-radius: 3px;
+    padding: 25px 0;
+    line-height: 2rem;
+    text-align: left;
+    color: #4c4c4c;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+input[type=submit] {
+    background-color: #da8f8d;
+    color: black;
+    padding: 10px 18px;
+    border: 0px;
+    border-radius: 4px;
+    width: 30%;
+    margin-left: 35%;
+}
+
+.container-content {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.container-content h3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #fbb444;
+
+}
+
+.container-row {
+    display: flex;
+    justify-content: space-between;
     text-align: justify;
 }
 
-/* Footer (Danna Castaneda)*/
+.container-row p {
+    color: #4c4c4c;
+}
+
+.team {
+    width: 30%;
+    padding: 5px;
+}
+
+.team-image {
+    width: 100%;
+    border-top: 5px solid #6cb4bb;
+    border-right: 5px solid #fbb444;
+    border-bottom: 5px solid #f28a56;
+    border-left: 5px solid #ec6c63;
+}
+
+#contactus {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-size: cover;
+}
+
 footer {
     width: auto;
     margin-left: 10%;
     margin-right: 10%;
-    background-color: #CCCCCC;
 }
 
 footer h3 {
@@ -215,242 +327,126 @@ footer p {
     font-size: medium;
 }
 
-.contactus {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
+#logo-footer {
+    margin-left: 0;
+    padding-left: 0;
 }
 
 .footer-logo {
     width: 25%;
-    text-align: center;
+    background-color: #CCCCCC;
+    margin-top: 10px;
+    text-align: justify;
     padding: 10px;
 }
 
-.footer-logo p {
-    margin: 0;
-}
-
-#slogan {
-    font-style: italic;
-    margin: 5px;
-}
-
 .footer-about {
-    width: 35%;
+    width: 30%;
+    background-color: #CCCCCC;
+    margin-top: 10px;
+    text-align: justify;
+    padding: 10px;
+}
+
+.footer-quick {
+    width: 25%;
+    background-color: #CCCCCC;
+    margin-top: 10px;
+    text-align: justify;
+    padding: 10px;
+}
+
+.footer-contact {
+    width: 20%;
+    background-color: #CCCCCC;
+    margin-top: 10px;
     text-align: justify;
     padding: 10px;
 }
 
 #insideDiv {
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 50%;
 }
 
-.footer-quick {
-    width: 15%;
-    text-align: justify;
-    padding: 10px;
+.footerId p {
+    margin: 0;
+    padding: 0;
 }
 
-.footer-quick p {
-    margin-top: 8px;
-    margin-bottom: 0px;
-}
-
-.footer-contact {
-    width: 25%;
-    text-align: justify;
-    padding: 10px;
-}
-
-.footer-contact p { 
-    margin-top: 2px;
-    margin-bottom: 0px;
+.footerId p a {
+    text-decoration: none;
+    color: black;
 }
 
 #social-media {
     padding: 0;
-    margin: 8px;
-    margin-top: 5px;
 }
 
 #social-media li {
     display: inline-block;
 }
 
-#social-media a {
+.fa-facebook {
+    background: #3B5998;
     color: white;
-}
-
-.fa {
-    padding: 8px;
-    font-size: 15px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-    color: white;
-}
-
-.fa:hover {
-    opacity: 0.7;
-    color: white;
-}
-
-.fa-skype {
-  background: #00aff0;
-}
-
-.fa-youtube {
-    background: #bb0000;
 }
 
 .fa-twitter {
     background: #55ACEE;
+    color: white;
 }
 
 .fa-instagram {
-    background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    background: #125688;
+    color: white;
 }
 
-.fa-vimeo {
-    background: #45bbff;
-}
-
-@media screen and (max-width: 768px) {
-    /* Navigation (Danna Castaneda)*/
-    nav {
-        position: relative;
-        text-align: center;      
-    }
-
-    nav ul {
-        flex-direction:column;
-        background-color: #CCCCCC;
-        position: absolute;
-        top: 100%;
-        width: 100%;
-        transform: translateX(-150%);
-        transition: 0.5s;
-        padding: 10px;
-    }
-   
-    nav li {
-        width: 70%;
-    }    
-
-    nav ul li:hover > ul{
-        opacity: 0;
-    }
-
-    nav #toggle::after{
-        content: "menu";
-        padding: 10px;
-        transform: rotate(0deg);
-    }
-
-    .show{
-        transform: translateX(0%);
-    }
-    
-    .show + #toggle::after {
-        content: "close";
-    }
-    
-    #toggle {
-        transition: 0.5s;
-        transform: rotate(0deg);
+@media only all and (max-width:768px) {
+    .container {
+        flex-direction: column;
         margin-top: 30px;
     }
 
-    .show + #toggle {
-        transform: rotate(360deg);
-    }
-    
-    /* Webpage 3: History page (Danna Castaneda) */
-    table {
-        border: 0;
-    }
-        
-    table thead {
-        border: none;
-        clip: rect(0 0 0 0);
-        height: 1px;
-        margin: -1px;
-        overflow: hidden;
-        padding: 0;
-        position: absolute;
-        width: 1px;
-    }
-    
-    table tr {
-        border-top: 3px solid #ffcc99;
-        display: block;
-        margin-bottom: .625em;
-    }
-    
-    td:hover{
-        background-color: #f5f5dc;
+    .contact-column-details {
+        width: 100%;
+        margin-top: 30px;
     }
 
-    table td {
-        border-bottom: 1px solid #ddd;
-        display: block;
-        font-size: .8em;
-        text-align: right;
-        background-color: #f8f8f8;
-    }
-    
-    table td::before {
-        content: attr(data-label);
-        float: left;
-        font-weight: bold;
-        text-transform: uppercase;
-    }
-    
-    table td:last-child {
-        border-bottom: 0;
+    .contact-column-details-who {
+        width: 100%;
+        margin-top: 50px;
     }
 
-    /* Footer (Danna Castaneda)*/
-    .contactus {
-        display: flex;
+    .contact-column-details-form {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .contact-column-details-form h3 {
+        margin-left: 0px;
+    }
+
+    .contact-image {
+        width: 100%;
+    }
+
+    .donate-button {
+        width: 23%;
+    }
+
+    .donate-button-who {
+        width: 23%;
+    }
+
+    .contact-image-address {
+        width: 100%;
+    }
+
+    .container-row {
         flex-direction: column;
     }
 
-    .footer-logo {
-        width: 100%;
-        text-align: center;
-    }   
-    
-    .footer-about {
-        width: 100%;
-        text-align: justify;
-    }
-
-    .footer-about h3{
-        text-align: center;
-    }
-        
-    #insideDiv {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-        
-    .footer-quick {
-        display: none;
-    }
-
-    .footer-contact {
-        width: 100%;
-        text-align: center;
-    }
-
-    .footer-contact p{
-        text-align: justify;
-        padding-left: 50px ;
+    .team-image {
+        width: 325%;
     }
 }
